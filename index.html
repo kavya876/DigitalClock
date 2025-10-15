@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Digital Clock</h2>
+    <div class="container1">
+        <div id="time"></div>
+        <div id="date"></div>
+    </div>
+    <div class="container2">
+        <div class="timezone">
+            <label for="timezone">Enter Time Zone:</label>
+           <input type="text" id="inputtimezone" list="timezones" placeholder="e.g., Asia/Kolkata">
+<datalist id="timezones">
+  <option value="Asia/Kolkata">
+  <option value="America/New_York">
+  <option value="Europe/London">
+  <option value="Asia/Tokyo">
+  <option value="Australia/Sydney">
+  <option value="Europe/Paris">
+  <option value="Asia/Dubai">
+  <option value="America/Los_Angeles">
+</datalist>
+        </div>
+        <div id="timeFormate">
+            <label for="formate">Select Format</label>
+            <select name="timefor" id="formate">
+            <option value="12">12-hours</option>
+            <option value="24">24-hours</option>
+            </select>
+        </div>
+        <div id="alarams">
+            <input type="time" id="alarmTime">
+            <button onclick="setAlarm()">Set Alarm</button>
+            <div id="alarmStatus"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
